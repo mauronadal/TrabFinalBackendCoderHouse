@@ -1,0 +1,86 @@
+html {
+  background-color: #dddddd;
+  height: 100%;
+}
+
+body {
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  min-height: 100%;
+}
+
+hr {
+  background-color: #212529;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.jumbotron {
+  margin-top: 30px;
+}
+
+.welcome {
+  height: 30px;
+  padding: 1px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.float-right {
+  float: right;
+}
+
+.medium-image {
+  width: 150px;
+  height: 150px;
+}
+
+#logo {
+  color: #ffc107;
+}
+
+#logo-title {
+  font-size: medium;
+}
+
+#label-insert-photo {
+  padding-top: 6%;
+}
+
+/* ------------------------------ Tables styles ----------------------------- */
+table {
+  background-color: #f8f9fa;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/*Selector que provee la opción de colorear una fila de por medio en una tabla*/
+tr:nth-child(even) {
+  /*El parámetro puede ser odd también*/
+  background-color: #aaaaaa;
+}
+
+table thead th {
+  color: #dddddd;
+  text-align: center;
+  border: solid 1px #dddddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+table tbody td {
+  text-align: center;
+  border: solid 1px #dddddd;
+  padding: 8px;
+}
+
+.align-left {
+  text-align: left;
+}

@@ -1,0 +1,102 @@
+[2023-01-18T23:47:03.498] [ERROR] Error - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor f8-20020a056870d14800b00136f3e4bc29sm19493999oac.9 - gsmtp
+    at SMTPConnection._formatError (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:1542:34)
+    at SMTPConnection.<anonymous> (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at SMTPConnection._onSocketData (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor f8-20020a056870d14800b00136f3e4bc29sm19493999oac.9 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+[2023-01-18T23:49:47.100] [ERROR] Error - Error: Authenticate
+    at success (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/twilio/lib/base/Version.js:135:15)
+    at Promise_then_fulfilled (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:766:44)
+    at Promise_done_fulfilled (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:835:31)
+    at Fulfilled.Fulfilled_dispatch [as dispatch] (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:1229:9)
+    at Pending_become_eachMessage_task (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:1369:30)
+    at RawTask.call (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/asap/asap.js:40:19)
+    at flush (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/asap/raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-01-18T23:49:47.555] [ERROR] Error - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor b13-20020aca674d000000b0036e3bb67a20sm559967oiy.38 - gsmtp
+    at SMTPConnection._formatError (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:1542:34)
+    at SMTPConnection.<anonymous> (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at SMTPConnection._onSocketData (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor b13-20020aca674d000000b0036e3bb67a20sm559967oiy.38 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+[2023-01-19T12:40:13.175] [ERROR] Error - Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+[2023-01-19T12:40:13.372] [ERROR] Error - Ruta: "/api/carrito/id/productos" | Método: "GET" | Respuesta HTTP: "500: Internal Server Error"
+[2023-01-19T16:38:04.942] [ERROR] Error - Cast to ObjectId failed for value ":1" (type string) at path "_id" for model "Products"
+[2023-01-19T16:38:05.347] [ERROR] Error - Ruta: "/api/productos/listado/:1" | Método: "GET" | Respuesta HTTP: "500: Internal Server Error"
+[2023-01-19T16:39:22.660] [ERROR] Error - Cast to ObjectId failed for value ":632bbd1652facedf4295b933" (type string) at path "_id" for model "Products"
+[2023-01-19T16:39:22.868] [ERROR] Error - Ruta: "/api/productos/listado/:632bbd1652facedf4295b933" | Método: "GET" | Respuesta HTTP: "500: Internal Server Error"
+[2023-01-19T18:57:57.829] [ERROR] Error - Error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor q10-20020acad90a000000b00354932bae03sm18465732oig.10 - gsmtp
+    at SMTPConnection._formatError (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:1542:34)
+    at SMTPConnection.<anonymous> (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at SMTPConnection._onSocketData (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '534-5.7.9 Application-specific password required. Learn more at\n' +
+    '534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor q10-20020acad90a000000b00354932bae03sm18465732oig.10 - gsmtp',
+  responseCode: 534,
+  command: 'AUTH PLAIN'
+}
+[2023-01-19T19:20:27.265] [ERROR] Error - Error: Twilio could not find a Channel with the specified From address
+    at success (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/twilio/lib/base/Version.js:135:15)
+    at Promise_then_fulfilled (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:766:44)
+    at Promise_done_fulfilled (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:835:31)
+    at Fulfilled.Fulfilled_dispatch [as dispatch] (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:1229:9)
+    at Pending_become_eachMessage_task (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:1369:30)
+    at RawTask.call (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/asap/asap.js:40:19)
+    at flush (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/asap/raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  status: 400,
+  code: 63007,
+  moreInfo: 'https://www.twilio.com/docs/errors/63007',
+  details: undefined
+}
+[2023-01-19T19:22:07.671] [ERROR] Error - Error: Twilio could not find a Channel with the specified From address
+    at success (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/twilio/lib/base/Version.js:135:15)
+    at Promise_then_fulfilled (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:766:44)
+    at Promise_done_fulfilled (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:835:31)
+    at Fulfilled.Fulfilled_dispatch [as dispatch] (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:1229:9)
+    at Pending_become_eachMessage_task (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/q/q.js:1369:30)
+    at RawTask.call (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/asap/asap.js:40:19)
+    at flush (/home/novem/Documentos/GitHub/CoderHouse-TF-Backend-B/node_modules/asap/raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  status: 400,
+  code: 63007,
+  moreInfo: 'https://www.twilio.com/docs/errors/63007',
+  details: undefined
+}
