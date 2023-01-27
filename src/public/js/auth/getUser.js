@@ -38,12 +38,12 @@
         <a
           href="login.html"
           type="button"
-          class="btn btn-light"
+          class="btn btn-sm btn-primary"
         >
           Iniciar sesión
         </a>
-        <a href="signup.html" type="button" class="btn btn-warning">
-          Registrarse
+        <a href="signup.html" type="button" class="btn btn-sm btn-info">
+          Crear cuenta
         </a>
       </div>
     `;
