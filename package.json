@@ -1,5 +1,5 @@
 {
-  "name": "proyecto_final_backend_e-commerce",
+  "name": "ProyectoFinalBackend",
   "type": "module",
   "version": "1.0.0",
   "description": "",
@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AVelazquez97/ProyectoFinal-BackendCoderHouse.git"
+    "url": "git+https://github.com/mauronadal/TrabFinalBackendCoderHouse.git"
   },
   "keywords": [],
-  "author": "https://github.com/AVelazquez97",
+  "author": "https://github.com/mauronadal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AVelazquez97/ProyectoFinal-BackendCoderHouse/issues"
+    "url": "https://github.com/mauronadal/TrabFinalBackendCoderHouse/issues"
   },
-  "homepage": "https://github.com/AVelazquez97/ProyectoFinal-BackendCoderHouse#readme",
+  "homepage": "https://github.com/mauronadal/TrabFinalBackendCoderHouse#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-mongo": "^4.6.0",
