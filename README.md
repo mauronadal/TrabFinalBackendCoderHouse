@@ -1,4 +1,6 @@
 # Proyecto backend e-commerce CoderHouse
+## Autor: Nadal Mauro
+## Comisiones: 32065 y 32085
 
  Link del Proyecto: https://backend-mauronadal.onrender.com/
  
