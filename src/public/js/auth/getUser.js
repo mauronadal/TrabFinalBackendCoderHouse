@@ -11,14 +11,15 @@
 
       template = `
       <div class="dropdown-center">
-        <button class="btn btn-dark dropdown-toggle"
+        <button class="btn dropdown-toggle"
+          style="background-color:  rgb(206, 206, 42);"
           type="button" 
           data-bs-toggle="dropdown" 
           aria-expanded="false"
         >
           <img src="${fotoUrl}" width="40" height="40" class="rounded-circle">
         </button>
-        <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-dark text-end">
+        <ul class="dropdown-menu dropdown-menu-lg-end text-end" style="background-color:  rgb(206, 206, 42);">
           <li><small class="dropdown-item">${data.email}</small></li>
           <li><small class="dropdown-item">${data.fullName}</small></li>
           <li><small class="dropdown-item">${data.phone}</small></li>

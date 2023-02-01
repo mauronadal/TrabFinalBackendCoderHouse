@@ -7,7 +7,7 @@ const renderProducts = (data) => {
         (product) => `
           <div class="col">
               <div class="card text-white">
-                  <img src="${product.thumbnail}" class="medium-image card-img-top p-3 mx-auto" alt='not found'>
+                  <img src="${product.thumbnail}" class="card-img-top p-2 mx-auto" alt='not found'>
                   <div class="card-body text-center">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text"><b>$ ${product.price}</b> <br> 
@@ -18,7 +18,7 @@ const renderProducts = (data) => {
                   <div class="card-footer text-center">
                     <small class='text-muted'>Última edición: ${product.timestamp}</small>
                     <hr/>
-                    <button class="btn btn-sm btn-success" type="button" onclick="addToCart('${product.id}')">
+                    <button class="btn btn-sm" style="background-color: rgb(206, 206, 42); type="button" onclick="addToCart('${product.id}')">
                       Agregar al carrito
                     </button>
                     <div class="mt-2">
