@@ -209,3 +209,6 @@
 [2023-01-27T16:34:15.240] [WARN] Warn - Ruta: "/api/usuario" | Método: "GET" | Respuesta HTTP: "401: Unauthorized"
 [2023-01-27T16:36:16.581] [WARN] Warn - Ruta: "/api/usuario" | Método: "GET" | Respuesta HTTP: "401: Unauthorized"
 [2023-01-27T16:42:51.279] [WARN] Warn - Ruta: "/api/carrito/63c9c5e142d8bb0c846ce9ae/productos" | Método: "GET" | Respuesta HTTP: "404: Not Found"
+[2023-02-01T08:47:03.860] [WARN] Warn - Ruta: "/api/usuario" | Método: "GET" | Respuesta HTTP: "401: Unauthorized"
+[2023-02-01T08:48:19.017] [WARN] Warn - Ruta: "/api/carrito/63c9c5e142d8bb0c846ce9ae/productos" | Método: "GET" | Respuesta HTTP: "404: Not Found"
+[2023-02-01T08:53:49.181] [WARN] Warn - Ruta: "/api/carrito/63c9c5e142d8bb0c846ce9ae/productos" | Método: "GET" | Respuesta HTTP: "404: Not Found"
