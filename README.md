@@ -15,7 +15,7 @@ Las caracteristicas principales son:
 2. CRUD de productos (Agregado, lectura, edición y eliminación).
 3. Agregado de productos al carrito.
 4. Generación de pedido (orden de compra).
-5. Visualización de historial de ordenes generadas.
+5. Historial de ordenes generadas.
 6. Envio de alertas de email a una casilla configurable con detalle de orden de
     compra generada (nodemailer/gmail).
 7. La capa de persistencia de datos implementa un "DAOFactory" para cambiar desde variables de entorno de forma dinamica: 
@@ -37,11 +37,10 @@ Las caracteristicas principales son:
   
     - El servidor Express puede ser ejecutado mediante diversos scripts disponibles:
     - Dispositivos UNIX:
-      - `npm run development` modo desarrollo con las variables de entorno definidas en el archivo `development.env`.
-      - `npm run production` modo producción con las variables de entorno definidas en el archivo `production.env`.
+      - `npm run development` modo desarrollo con las variables de entorno `development.env`.
+      - `npm run production` modo producción con las variables de entorno  `production.env`.
       - `npm run start` servidor por defecto en modo producción.
-      - `npm run watch` con nodemon instalado.
-
+      
     
   - Acceder al frontend:
     ```localhost:8080/```
