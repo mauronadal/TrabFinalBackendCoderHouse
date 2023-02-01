@@ -58,7 +58,7 @@ class CartDAOFileSystem extends FileSystemContainer {
   };
 
   #compareStockAndQty = (stock, quantity) => {
-    //Se busca evaluar que la cantidad del producto a insertar al carrito sea menor o igual al stock del mismo.
+    
     return quantity > stock ? stock : quantity;
   };
 
@@ -84,7 +84,7 @@ class CartDAOFileSystem extends FileSystemContainer {
     }
   };
   deleteById = async (id) => {
-    // Es necesario refactorizar este método
+    
     try {
       const carts = await this.viewFile();
       let cartCounter = 1;
@@ -123,7 +123,7 @@ class CartDAOFileSystem extends FileSystemContainer {
   };
 
   insertProduct = async (id, id_prod, quantity) => {
-    //Para incorporar productos a un carrito por su id de producto
+    
     try {
       const { timestamp, name, description, code, thumbnail, price, stock } =
         await this.#getProduct(Number(id_prod));
@@ -151,7 +151,7 @@ class CartDAOFileSystem extends FileSystemContainer {
   };
 
   deleteProduct = async (id, id_prod) => {
-    // Es necesario refactorizar este método
+    
     try {
       let cart = await this.#getCartById(Number(id));
       let productCounter = 1;

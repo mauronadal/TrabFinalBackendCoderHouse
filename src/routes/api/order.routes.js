@@ -3,7 +3,7 @@ import ordersController from '../../controllers/api/order.controller.js';
 
 const router = Router();
 
-/* ----------------------------- Orders router ---------------------------- */
+
 router.get('/', ordersController.getAllOrders);
 router.get('/:id', ordersController.getOrderById);
 router.post('/', ordersController.createOrder);

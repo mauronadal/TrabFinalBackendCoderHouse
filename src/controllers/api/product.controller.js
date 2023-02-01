@@ -34,7 +34,7 @@ const productsController = {
   },
   searchProductByFilter: async (req, res, next) => {
     const filters = req.query;
-    /*Con las siguientes líneas se busca parsear todo los valores de la query para evitar errores*/
+    
     filters.name.length === 0 ? (filters.name = null) : '';
     filters.minPrice.length === 0 ? (filters.minPrice = null) : filters.minPrice = parseFloat(filters.minPrice);
     filters.maxPrice.length === 0 ? (filters.maxPrice = null) : filters.maxPrice = parseFloat(filters.maxPrice);
@@ -50,7 +50,7 @@ const productsController = {
   addProduct: async (req, res, next) => {
     if (areFieldsFilled(req.body)) {
       const { name, description, code, thumbnail, price, stock } = req.body;
-      // Si no quedó ningún campo vacío, se procede a ingresar el producto
+      
       try {
         const msg = await productDAO.insertProduct({
           name,
@@ -72,7 +72,7 @@ const productsController = {
     if (areFieldsFilled(req.body)) {
       const { id } = req.params;
       const { name, description, code, thumbnail, price, stock } = req.body;
-      // Si no quedó ningún campo vacío, se procede a actualizar el producto
+     
       try {
         const timestamp = new Date();
         const msg = await productDAO.updateProduct(

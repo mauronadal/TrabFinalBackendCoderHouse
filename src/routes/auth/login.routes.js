@@ -6,7 +6,7 @@ import passport from '../../middlewares/passport/passport-local.middleware.js';
 const router = Router();
 
 /* ---------------------------- inicio de sesión ---------------------------- */
-/* No entiendo porque debo llamar al post dos veces pero es la única forma que encontré para que funcione esto */
+
 router.post(
   '/',
   loginReqValidation,

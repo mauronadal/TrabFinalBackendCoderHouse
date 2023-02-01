@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <!-- -------------------- Comienzo barra de navegación --------------------- -->
+  
     <nav class="navbar navbar-expand-lg" style="background-color: rgb(206, 206, 42);">
       <div class="container">
      
@@ -44,9 +44,10 @@
         </div>
       </div>
     </nav>
-    <!-- ----------------------- Fin barra de navegación ----------------------- -->
+   
     <main>
-      <div class="container py-5 min-vh-70">
+      <div class="container py-5 min-vh-70  ">
+        <div class="col-md-4 p-5 shadow-sm border rounded-3">
         <h1>Inicio de sesión</h1>
         <hr />
         <form
@@ -54,7 +55,7 @@
           class="row g-3 needs-validation"
           novalidate
         >
-          <!-- --------------------------- Campo de email ---------------------------- -->
+          
           <div class="form-group">
             <label for="inputEmail" class="form-label">Email</label>
             <div class="input-group has-validation">
@@ -70,7 +71,7 @@
               />
             </div>
           </div>
-          <!-- ------------------------- Campo de contraseña ------------------------- -->
+          
           <div class="form-group">
             <label for="inputPassword" class="form-label">Contraseña</label>
             <div class="input-group has-validation">
@@ -84,17 +85,18 @@
               />
             </div>
           </div>
-          <!-- ------- Botones para iniciar sesión o ir al registro de usuario ------- -->
+         
           <div class="col-md-12">
             <button type="submit" class="btn btn-dark me-2">Iniciar sesión</button>
-            <a href="signup.html" type="button" class="btn btn-warning">
+            <a href="signup.html" type="button" class="btn" style="background-color: rgb(206, 206, 42);">
               Crear cuenta
             </a>
           </div>
         </form>
       </div>
+      </div>
     </main>
-    <!-- ------------------------- Comienzo footer ------------------------- -->
+    
     <footer class="footer mt-auto py-3" style="background-color: rgb(206, 206, 42);">
       <div class="container text-center">
         <span class="text-muted"
@@ -102,9 +104,9 @@
         >
       </div>
     </footer>
-    <!-- ----------------------------- Fin footer ------------------------------ -->
+   
 
-    <!-- -------------------------- Inicio de scripts -------------------------- -->
+    
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

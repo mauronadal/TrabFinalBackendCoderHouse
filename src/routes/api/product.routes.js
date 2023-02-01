@@ -5,7 +5,7 @@ import authenticationMiddleware from '../../middlewares/auth/auth.middleware.js'
 
 const router = Router();
 
-/* ----------------------------- Products router ---------------------------- */
+
 router.get('/listado', productsController.getAllProducts);
 router.get('/listado/:id', productsController.getProductById);
 router.get('/busqueda', productsController.searchProductByFilter)

@@ -4,7 +4,7 @@ import { CLUSTER_MODE, APP_PORT, ADMIN_MODE, PERSISTENCY } from './src/config/in
 import { LoggerInfo, LoggerError } from './src/config/log4.js';
 import app from './src/app.js';
 
-/* ----------------------------- server settings ---------------------------- */
+/* ----------------------------- server ---------------------------- */
 if (CLUSTER_MODE && cluster.isPrimary) {
   const numCPUs = cpus().length;
   LoggerInfo.info(`PID MASTER ${process.pid}`);

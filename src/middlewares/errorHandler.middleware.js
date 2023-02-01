@@ -1,14 +1,14 @@
 import { LoggerError, LoggerWarn } from '../config/log4.js';
 const errorHandler = (error, req, res, next) => {
   const notFoundedErrors = [
-    /* -------------------- Errores relacionados a productos -------------------- */
+    /* -------------------- Errores productos -------------------- */
     'Error al insertar: uno o más campos quedaron vacíos.',
     'Error al listar: no se encontró el producto con el id indicado.',
     'Error al listar: no hay productos cargados en el sistema.',
     'Error al actualizar: uno o más campos quedaron vacíos.',
     'Error al actualizar: no se encontró el producto con el id indicado.',
     'Error al borrar: no se encontró el producto con el id indicado.',
-    /* --------------------- Errores relacionados a carritos -------------------- */
+    /* --------------------- Errores carritos -------------------- */
     'Error al insertar: no existe un producto con el id indicado.',
     'Error al insertar: no existe un carrito con el id indicado.',
     'Error al listar: no existe un carrito con el id indicado.',
@@ -16,9 +16,9 @@ const errorHandler = (error, req, res, next) => {
     'Error al listar: el carrito no tiene un producto con el id indicado.',
     'Error al borrar: no existe un carrito con el id indicado.',
     'Error al borrar: no existe en el carrito un producto con el id indicado.',
-    /* -------------- Errores relacionados a filtrado de productos -------------- */
+    /* -------------- Errores filtrado de productos -------------- */
     'Error al buscar: no hay productos que coincidan con los filtros.',
-    /* --------------------- Errores relacionados a ordenes --------------------- */
+    /* --------------------- Errores ordenes --------------------- */
     'Error al listar: no hay ordenes adjuntas al cliente.',
     'Error al generar orden: no hay productos en el carrito.',
     'Error al borrar: no existe una orden con el id indicado.',

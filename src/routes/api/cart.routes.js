@@ -3,7 +3,7 @@ import cartsController from '../../controllers/api/cart.controller.js';
 
 const router = Router();
 
-/* ------------------------------ Carts router ------------------------------ */
+
 router.post('/:clientId', cartsController.createCart);
 router.delete('/:id', cartsController.deleteCartById);
 router.get('/:clientId/productos', cartsController.getAllProductsFromCartByClientId);

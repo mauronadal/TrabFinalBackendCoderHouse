@@ -66,7 +66,7 @@ class CartsDAOMongoDB extends MongoDBContainer {
 
   createCart = async (clientId) => {
     try {
-      /*Si el cliente ya tiene un carrito se devuelve el id del mismo. En caso contrario se crea un nuevo carrito*/
+     
       let cart = await this.findCartByClientId(clientId);
       if (!cart) {
         cart = await this.collectionName.create({

@@ -6,7 +6,7 @@ import authenticationMiddleware from '../../middlewares/auth/auth.middleware.js'
 
 const router = Router();
 
-// Se agrupan todas las rutas de auth
+
 router.use('/signup', signupRouter);
 router.use('/login', loginRouter);
 router.use('/logout', authenticationMiddleware, logoutRouter);

@@ -15,7 +15,7 @@ passport.use(
       try {
         const existUser = await User.findOne({ email });
         if (existUser) {
-          LoggerWarn.warn('El usuario con el mail indicado ya está registrado.');
+          LoggerWarn.warn('El usuario ya está registrado.');
           return done(null, false);
         }
         
@@ -32,7 +32,7 @@ passport.use(
         newUser.photo = photo; 
         try {
           const user = await User.create(newUser);
-          LoggerInfo.info('Se ha registrado un nuevo usuario en el sistema.');
+          LoggerInfo.info('Se ha registrado un nuevo usuario.');
           return done(null, user);
         } catch (error) {
           LoggerError.error(`Error creando el usuario: ${error}`);
@@ -58,7 +58,7 @@ passport.use(
       try {
         const user = await User.findOne({ email });
         if (!user) {
-          LoggerWarn.warn('No existe el usuario con el mail indicado.');
+          LoggerWarn.warn('No existe el usuario.');
           return done(null, false);
         }
         if (!user.comparePassword(password)) {

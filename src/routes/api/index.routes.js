@@ -7,7 +7,7 @@ import authenticationMiddleware from '../../middlewares/auth/auth.middleware.js'
 
 const router = Router();
 
-// Se agrupan todas las rutas de la api
+
 router.use('/productos', productRouter);
 router.use('/usuario', authenticationMiddleware, userRouter);
 router.use('/carrito', authenticationMiddleware, cartRouter);

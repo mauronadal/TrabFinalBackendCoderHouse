@@ -17,20 +17,20 @@ import authRouter from './routes/auth/index.routes.js';
 
 const app = express();
 
-/* -------------------------- middlewares settings -------------------------- */
+/* -------------------------- middlewares -------------------------- */
 app.use(json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser(COOKIES_SECRET));
 app.use(express.static(process.cwd() + '/src/public'));
 app.use(requestsLogger);
 
-/* -------------------------- template engine settings -------------------------- */
+/* -------------------------- template engine  -------------------------- */
 const hbs = create();
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.set('views', path.join(process.cwd(), '/src/views'));
 
-/* ---------------------------- session settings ---------------------------- */
+/* ---------------------------- session  ---------------------------- */
 app.use(
   session({
     secret: SESSION_SECRET,
@@ -51,16 +51,16 @@ app.use(
   })
 );
 
-/* ---------------------------- passport settings --------------------------- */
+/* ---------------------------- passport  --------------------------- */
 app.use(passport.initialize());
 app.use(passport.session());
 
-/* -------------------------- routes settings -------------------------- */
+/* -------------------------- routes -------------------------- */
 app.use('/', homeRouter);
 app.use('/api', apiRouter);
 app.use('/auth', authRouter);
 
 app.use(errorHandler);
-app.use(badRequest); // Middleware que evalua si el endpoint visitado existe o no
+app.use(badRequest); 
 
 export default app;
