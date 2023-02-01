@@ -1,9 +1,7 @@
 # Proyecto backend e-commerce CoderHouse
 
  Link del Proyecto: https://backend-mauronadal.onrender.com/
- Autor: Nadal Mauro
- Comisión: 32065 y 32085 
-
+ 
 # Resúmen
 
 API RESTful desarrollada con NodeJS y ExpressJS con frontend basico para poder probar la funcionalidad.
