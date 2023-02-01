@@ -1,18 +1,16 @@
 # Proyecto backend e-commerce CoderHouse
 
+Autor: Nadal Mauro
+Comisión: 32065 y 32085 
 Link del Proyecto: https://backend-mauronadal.onrender.com/
-
-- [Resúmen](#resúmen)
-- [1. Puesta en marcha](#1-puesta-en-marcha)
-- [2. Tecnologías utilizadas](#2-tecnologías-y-librerías-utilizadas)
 
 
 # Resúmen
 
-Esta es una API RESTful desarrollada con NodeJS y ExpressJS que cuenta con una capa básica de frontend 
-servida en espacio público del servidor.
+API RESTful desarrollada con NodeJS y ExpressJS con frontend basico para poder probar la funcionalidad.
 
-Las funcionalidades principales son:
+
+Las caracteristicas principales son:
 
 1. Autenticación: Registro de usuario e Inicio de sesión mediante PassportJS
 2. CRUD de productos (Agregado, lectura, edición y eliminación).
@@ -21,16 +19,12 @@ Las funcionalidades principales son:
 5. Visualización de historial de ordenes generadas.
 6. Envio de alertas de email a una casilla configurable con detalle de orden de
     compra generada (nodemailer/gmail).
-7. La capa de persistencia de datos implementa un "DAOFactory" que permite cambiar de forma dinamica 
-    entre varias persistencias configurables desde variables entorno.
-   - Para producción:
+7. La capa de persistencia de datos implementa un "DAOFactory" para cambiar desde variables de entorno de forma dinamica: 
+    
+     - Producción:
      - mongoDB (local o mongo atlas)
      - Para desarrollo:
      - fileSystem
-
-
-# 1. Puesta en marcha
-
 
 
 ##  Ejecución en localhost
@@ -38,7 +32,7 @@ Las funcionalidades principales son:
 
     Estas deben ser configuradas con las credenciales necesarias para la correcta ejecución del servidor.
   
-    **Una aclaración importante es que estos ficheros están visibles únicamente porque es necesario para el correcto monitoreo del proyecto.** 
+    **Importante los ficheros están visibles porque es necesario para el correcto monitoreo del proyecto.** 
 
     **En condiciones reales se ocultarían en el `.gitignore`**
   
@@ -46,14 +40,14 @@ Las funcionalidades principales son:
     - Dispositivos UNIX:
       - `npm run development` modo desarrollo con las variables de entorno definidas en el archivo `development.env`.
       - `npm run production` modo producción con las variables de entorno definidas en el archivo `production.env`.
-      - `npm run start` levanta el servidor por defecto en modo producción. Invoca a `npm run production`.
+      - `npm run start` servidor por defecto en modo producción.
       - `npm run watch` con nodemon instalado.
 
     
-  - Luego de poner en en marcha el proyecto, es posible acceder al frontend en la siguiente dirección:
+  - Acceder al frontend:
     ```localhost:8080/```
 
-# 2. Tecnologías y librerías utilizadas
+# Tecnologías y librerías utilizadas
 
   - NodeJS 18.7.xx
   - NPM 8.19.xx
