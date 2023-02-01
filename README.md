@@ -14,7 +14,7 @@ servida en espacio público del servidor.
 
 Las funcionalidades principales son:
 
-1. Autenticación: Registro de usuario e Inicio de sesión mediante PassportJS (Local Strategy)
+1. Autenticación: Registro de usuario e Inicio de sesión mediante PassportJS
 2. CRUD de productos (Agregado, lectura, edición y eliminación).
 3. Agregado de productos al carrito.
 4. Generación de pedido (orden de compra).
@@ -49,10 +49,7 @@ Las funcionalidades principales son:
       - `npm run start` levanta el servidor por defecto en modo producción. Invoca a `npm run production`.
       - `npm run watch` con nodemon instalado.
 
-    - Dispositivos Windows:
-      - `npm run development:win` modo desarrollo con las variables de entorno definidas en el archivo `development.env`.
-      - `npm run production:win` modo producción con las variables de entorno definidas en el archivo `production.env`.
-
+    
   - Luego de poner en en marcha el proyecto, es posible acceder al frontend en la siguiente dirección:
     ```localhost:8080/```
 
